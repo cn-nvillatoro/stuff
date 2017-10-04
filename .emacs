@@ -23,3 +23,7 @@
 (setq-default indent-tabs-mode nil)
 ;; js2-mode indents 2 units
 (setq-default js2-basic-offset 2)
+;; indent case statements
+(setq-default js-switch-indent-offset 2)
+;; auto close bracket, etc.
+(electric-pair-mode 1)
