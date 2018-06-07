@@ -30,6 +30,12 @@
 (setq-default js-switch-indent-offset 2)
 ;; auto close bracket, etc.
 (electric-pair-mode 1)
+
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (flyspell-prog-mode)
+          ))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
