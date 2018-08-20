@@ -1,0 +1,3 @@
+#!/bin/bash
+# remove all local brances but master and develop
+git branch | grep -v -e "master$" -e "develop$" | xargs git branch -D 
