@@ -11,3 +11,5 @@ but is really useful when Mergify will report its status and for debugging rules
 We advise setting an explicity name that makes sense to you.
 
 Third time's a charm!
+
+So maybe 3rd try is not a  charm.
