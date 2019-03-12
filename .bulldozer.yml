@@ -1,0 +1,22 @@
+version: 1
+
+merge:
+  whitelist:
+    labels: ["accepted"]
+  blacklist:
+    labels: ["work in progress"]
+  # "required_status" is a list of additional status contexts that must pass
+  # before bulldozer can merge a pull request. This is useful if you want to
+  # require extra testing for automated merges, but not for manual merges.
+  #required_statuses:
+  #  - "ci/circleci: ete-tests"
+
+  method: merge
+  # If true, bulldozer will delete branches after their pull requests merge.
+  delete_after_merge: true
+
+update:
+  whitelist:
+    labels: ["accepted"]
+     
+  
